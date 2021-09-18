@@ -1,12 +1,3 @@
-/*
-   Lucas Araújo Pena - 13/0056162
-
-   Segurança Computacional - Turma B
-
-   Trabalho 2 - AES
-
-*/
-
 #define     CONSOLE_DEBUG false      // Mostra no console o resultado ao inves de mandar para um arquivo
 #define SAMPLE_TEXT_DEBUG false      // Passa um texto pequeno para teste (SAMPLE TEXT)
 
@@ -50,22 +41,6 @@ int main( int argc, char* argv[] ){
     }
 
     std::cout << "\n";
-
-    // [BUG] - Programa da erro se eu utilizo numeros de rodadas dada pelo usuario
-
-        //std::cout << " Entre com o numero de rodadas (max 255): ";
-        // uint8_t rounds = 1;
-        // std::cin >> rounds;
-
-        // if( rounds <= 0 || rounds >= 256 ){
-
-        //     std::cerr << " \nValor invalido para o numero de rodads.\n\n" << std::endl;
-        //     std::cin.ignore();
-        //     return -1;
-
-        // }
-
-        // std::cout << '\n';
 
     std::cout << " No momento, cifrando com " << N_ROUNDS 
               << " rodadas. ( Para alterar, acesse utils.h ) \n\n";
